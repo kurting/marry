@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>♥何闵喜宴♥</title>
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <meta name="Author" contect="koala">  
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon114.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon57.png" />
+</head>
+<body >
+	
+    <header>
+		<img src="img/4501.png" alt="吴炜清 庄冬荀邀请您~">
+    </header>
+    <div class="caption">
+        <img src="img/caption_bg.png">
+    </div>
+    <section>
+        <h2></h2>
+        <p>
+            谨订于2014年公历11月8日(农历九月十六)星期六中午11时,于湖北省孝感市孝昌县花园人家2楼大厅举行“何川 闵芳”结婚典礼，敬备喜筵 ！
+            期待您抽空参加我们的结婚典礼！！
+        </p>
+    </section>
+
+	<figure id="imgs">
+		<a href="img/4503.jpg">
+            <img class="img1" src="img/4503.jpg" alt="幸福见证"class="img2">
+        </a>
+        <a href="img/4502.jpg">
+		  <img class="img2"  src="img/4502.jpg" alt="幸福见证"class="img2">
+        </a>
+        <a href="img/4504.jpg">
+		  <img class="img3"  src="img/4504.jpg" alt="幸福见证" class="img2">
+        </a>
+        <a href="img/4505.jpg">
+		  <img class="img4" src="img/4505.jpg" alt="幸福见证" class="img2">
+        </a>
+	</figure>
+    <article>
+        <strong>交通指引：</strong>
+        <p class="indent0">湖北省孝感市孝昌县花园人家2楼大厅</p>
+        <p class="indent0">酒店电话 <span type="tel">(0712)4785777</span></p>
+        <!-- maps -->
+        <div class="map" id="map-canvas" >
+            <a href="http://j.map.baidu.com/MxsKv">
+               <img src="http://api.map.baidu.com/staticimage?center=114.012485,31.256985&width=300&height=200&&zoom=16&markers=114.012485,31.256985" alt="湖北省孝感市孝昌县花园人家2楼大厅">
+            </a>
+            
+        </div>
+        <a class="tac" href="http://j.map.baidu.com/MxsKv">(点击地图导航)</a>
+        <i class="tran3"></i>
+    </article>
+    <article class="last">
+        <strong>再次温馨提示</strong>
+        <p>宴会时间：2014年11月8日(农历九月十六)星期六上午11时</p>
+        <p>宴会地点：<a href="http://j.map.baidu.com/MxsKv">湖北省孝感市孝昌县花园人家<br>2楼大厅(点击导航位置)</a></p>
+		 <p>回门宴时间：2014年公历11月10日(农历九月十八)星期一中午12时</p>
+		   <p>回门宴地点：<a href="http://j.map.baidu.com/L-iUx">湖北省宜昌市夷陵路58号CBD恒基国际3楼大厅(点击导航位置)</a></p>	
+		<p>宴会接待：</p>
+        <p>何川：<span type="tel">13631248298</span></p>
+        <p>闵芳：<span type="tel">13631248529</span></p>
+    </article>
+</body>
+<script type="text/javascript">
+    window.onload = function(){
+        func1();
+    }
+    function func1(){
+        document.getElementById('imgs').className = "imgs"
+    }
+    
+</script>
+<script>
+var imgUrl = "http://mrkoal.github.io/marry/img/share.png";
+var lineLink = "http://mrkoal.github.io/marry/";
+var descContent = '谨订于2014年公历11月8日(农历九月十六)星期六中午11时,于湖北省孝感市孝昌县花园人家2楼大厅举行“何川 闵芳”结婚典礼，敬备喜筵 ！';
+var shareTitle = '何川&闵芳婚宴请柬';
+var appid = 'wx053001e44f4785dc';
+function shareFriend() {
+WeixinJSBridge.invoke('sendAppMessage',{
+"appid": appid,
+"img_url": imgUrl,
+"img_width": "200",
+"img_height": "200",
+"link": lineLink,
+"desc": descContent,
+"title": shareTitle
+}, function(res) {
+})}
+function shareTimeline() {
+WeixinJSBridge.invoke('shareTimeline',{
+"img_url": imgUrl,
+"img_width": "200",
+"img_height": "200",
+"link": lineLink,
+"desc": descContent,
+"title": shareTitle
+}, function(res) {
+});}
+function shareWeibo() {
+WeixinJSBridge.invoke('shareWeibo',{
+"content": descContent,
+"url": lineLink,
+}, function(res) {
+});}
+// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+// 发送给好友
+WeixinJSBridge.on('menu:share:appmessage', function(argv){
+shareFriend();
+});
+// 分享到朋友圈
+WeixinJSBridge.on('menu:share:timeline', function(argv){
+shareTimeline();
+});
+// 分享到微博
+WeixinJSBridge.on('menu:share:weibo', function(argv){
+shareWeibo();
+});
+}, false);
+</script>
+</html>
