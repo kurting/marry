@@ -1,0 +1,419 @@
+/* ==========================================================================
+    Reset
+   ========================================================================== */
+
+article
+aside
+details
+figcaption
+figure
+footer
+header
+hgroup
+main
+nav
+section
+summary
+  display block
+
+body
+div
+dl
+dt
+dd
+ul
+ol
+li
+h1
+h2
+h3
+h4
+h5
+h6
+pre
+code
+form
+fieldset
+legend
+input
+button
+textarea
+p
+blockquote
+th
+td
+figure
+    margin 0
+    padding 0
+
+fieldset
+img
+    border 0 none
+a
+img
+    vertical-align top
+
+a
+    background transparent
+    -webkit-tap-highlight-color rgba(255, 255, 255, 0)
+    
+    &:active
+    &:hover
+        outline 0 none
+    &
+    &:hover
+        text-decoration none
+:focus
+    outline 0 none
+
+address
+caption
+cite
+code
+dfn
+em
+th
+var
+optgroup
+    font-style normal
+    font-weight normal
+
+h1
+h2
+h3
+h4
+h5
+h6
+    font-size 100%
+
+abbr
+acronym
+    border 0 none
+    font-variant normal
+
+input
+button
+textarea
+select
+optgroup
+option
+    font-family inherit
+    font-size 100%
+    font-style inherit
+    font-weight:inherit
+
+code
+kbd
+samp
+tt
+input
+button
+textarea
+select
+    font-size 100%
+ol
+ul
+li
+    list-style none
+table
+    border-collapse collapse
+    border-spacing 0
+
+sup
+sub
+    font-size 100%
+    vertical-align baseline
+
+blockquote
+q
+    quotes none
+
+blockquote:before
+blockquote:after
+q:before
+q:after
+    content ''
+
+button
+html input[type="button"]
+input[type="reset"]
+input[type="submit"]
+  -webkit-appearance button
+  cursor pointer
+
+button[disabled]
+html input[disabled]
+  cursor not-allowed
+
+button
+    overflow visible
+
+em
+i
+    font-style normal
+
+@font-face 
+    font-family 'Broadway BT'
+    font-style normal
+    font-weight normal
+    src local('Broadway BT'), url('Broadway.woff') format('woff')
+
+::selection
+    background-color: #e72900
+    color #fff
+
+html
+    font-size 62.5%
+    overflow-y auto
+    -webkit-overflow-scrolling touch
+
+body
+    overflow-x hidden
+    min-height 500px
+    background-color #3b0104
+    background-repeat repeat-y
+    background-size 100% auto
+    background-position 0 .5em
+    background-image url(img/bg1x.png)
+    // background-image -webkit-image-set(url(img/bg1x.png) 1x,url(img/bg2x.png) 2x)       
+    font 100%/1.5 Hiragino Sans GB, WenQuanYi Micro Hei,arial,s('\5B8B\4F53'),sans-serif
+    color #333
+a
+    color #333
+
+    &:hover
+        color #f10180
+
+header
+    position relative
+    height 5.63em
+    padding-right 10%
+    color #fff
+    font-size 2em
+    line-height 5.5em
+    text-shadow 0 0 .6em #fff,0 0 .4em #de1900,0 0 .3em #ffe5a8
+    text-align right
+
+    p
+        overflow hidden
+        height 100%
+
+    span
+        font-family 'Broadway BT'
+
+    img
+        position absolute
+        height 6em
+        left 0
+        top 0
+        -webkit-transform-origin 0 0
+        -webkit-animation avatar 1s ease-in-out infinite
+
+article
+    position relative
+    font-size 1em
+    padding .7em 2em 2em
+    margin .5em 1.5em 2em
+    color #e72900
+    border-radius 4em
+    background-color #FFF
+    -webkit-filter drop-shadow(0 0 20px rgba(255,255,255,.9))
+    z-index 5
+
+    strong
+        display block
+        font-size 1.6em
+        line-height 1.4em
+        text-indent 1em
+        font-weight 700
+
+    strong.tac
+        font-size 2em
+
+    p
+        font-size 1.5em
+        text-indent 2em
+        line-height 1.4em
+
+    .indent0
+        text-indent 0
+
+    i
+        position absolute
+        display block
+        width 0
+        height 0
+        left 2em
+        top -2em
+        border-width 0 2em 4em 
+        border-style solid
+        border-color transparent transparent #fff
+        z-index -1 
+
+    .tran3
+        left 3.5em
+        -webkit-transform rotate(18deg)  
+
+    .map
+         display block
+         overflow hidden
+         width 99%
+         margin .5em auto
+
+         img
+             display block
+             width 100%
+
+    a
+        display block
+        color #e72900
+        text-decoration underline
+    
+    span[type tel]
+        text-decoration none
+        padding-left 0
+
+figure
+    position relative
+    font-size 1em
+    height 22em
+    margin-bottom 1.5em
+
+    &:after
+        content '加载中...'
+        position absolute
+        left 50%
+        top 50%
+        color #fff
+        font-size 2em
+        margin: -2.5em 0 0 -2em
+        z-index 1
+        -webkit-animation loading 500ms ease-in-out infinite 
+
+    img
+        opacity 0
+        border-radius 1px
+        border 3px solid #fff
+        box-shadow 0 0 3px #000
+        box-sizing border-box
+
+    .img1
+        position absolute
+        left 1.8em
+        top 0
+        height 52%
+        z-index 4
+
+    .img2
+        position absolute
+        right 1.8em
+        top 0
+        height 49%
+        z-index 3
+
+    .img3
+        position absolute
+        left 2.3em
+        top 50%
+        height 52%
+        z-index 2
+
+    .img4
+        position absolute
+        right 2.2em
+        bottom 0
+        height 100%
+        z-index 1
+
+.imgs
+    
+    &:after
+        display none
+    
+    .img1
+        -webkit-transform rotateZ(-367deg) //-7deg
+        -webkit-animation img1 3s forwards 1s
+        -webkit-backface-visibility hidden
+        -webkit-perspective 1000
+    .img2
+        -webkit-transform rotateZ(355deg) //5
+        -webkit-animation img2 2.5s forwards .5s
+        -webkit-backface-visibility hidden
+        -webkit-perspective 1000
+    .img3
+        -webkit-transform rotateZ(-368deg) //-8
+        -webkit-animation img3 1.5s forwards .5s
+        -webkit-backface-visibility hidden
+        -webkit-perspective 1000
+    .img4    
+        -webkit-transform rotateZ(356deg) //4
+        -webkit-animation img4 2s forwards
+        -webkit-backface-visibility hidden
+        -webkit-perspective 1000
+
+.tac
+    text-align center
+
+.last
+    padding-top 0
+    background none
+    color #fff
+
+    p
+        margin-bottom .5em
+        text-indent 0
+
+    a
+        display inline-block
+        color #fff
+
+@-webkit-keyframes img1
+    0%
+        opacity 0
+        -webkit-transform rotateZ(-0) translateY(-12em)
+
+    100%
+        opacity 1
+        -webkit-transform rotateZ(-367deg) translateY(0)
+
+@-webkit-keyframes img2
+    0%
+        opacity 0
+        -webkit-transform rotateZ(0) translateY(-12em)
+
+    100%
+        opacity 1
+        -webkit-transform rotateZ(355deg) translateY(0)
+
+@-webkit-keyframes img3
+    0%
+        opacity 0
+        -webkit-transform rotateZ(-0) translateY(-12em)
+
+    100%
+        opacity 1
+        -webkit-transform rotateZ(-368deg) translateY(0)
+
+@-webkit-keyframes img4
+    0%
+        opacity 0
+    40%
+        opacity .5
+    100%
+        opacity 1
+
+@-webkit-keyframes loading
+    0%
+        opacity .8
+    50%
+        opacity 1
+    100%
+        opacity .8
+
+@-webkit-keyframes avatar
+    0%
+        -webkit-transform scale(.85,.85)
+    50%
+        -webkit-transform scale(.9,.9)
+    100%
+        -webkit-transform scale(.85,.85)
